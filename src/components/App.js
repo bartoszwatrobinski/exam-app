@@ -17,7 +17,6 @@ import Questions from "../Pages/Questions";
 import Calendar from "../Pages/Calendar";
 import Forums from "../Pages/HelpPage"
 
-
 let script_index = 1;
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/signin" component={Signin} />
               <Route path="/" exact element={<ExamineePage />} />
-              <Route path="/Home"  element={<ExamineePage />} />
+              <Route path="/Home"  component={<ExamineePage />} />
               <Route path="/Help" element={<HelpPage />} />
               <Route path="/Examiner"  element={<ExaminerPage />} />
               <Route path="/CreateExam"  element={<CreateExam />} />
