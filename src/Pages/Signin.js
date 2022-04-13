@@ -17,12 +17,11 @@ export default function Signin() {
   async function handleSubmit(e) {
     e.preventDefault()
 
-
     try{
       setError('')
       setLoading(true)
       await signin(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      history.push("/Home")
     } catch {
       setError('Failed to sign in')
     }
@@ -38,7 +37,7 @@ export default function Signin() {
         
         {error && <Alert class="alert" variant="danger"><div class = "error">{error}</div></Alert>}
         <Form class="main" onSubmit={handleSubmit}>
-          <div>
+          <div className="SI">
 
             <div class="names" id="login">Not a member yet? <Link to="/signup" class="signUp">Sign up</Link> here</div>
             <div>

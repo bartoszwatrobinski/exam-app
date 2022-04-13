@@ -35,7 +35,7 @@ export default function ExamineePage() {
                     {error && <Alert variant="danger">{error}</Alert>}
                     <strong>Email: </strong> {currentUser.email}
                 </Card.Body>
-            </Card>
+          </Card>
                 <div className="w-100 text-center mt-2">
                     <button class="signoutButton" variant="link" onClick={handleLogout}>Log out</button>
                 </div>

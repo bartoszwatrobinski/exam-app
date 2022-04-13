@@ -65,9 +65,9 @@
 
 
 }
-input[type="text"],
-input[type="password"],
-input[type="email"]{
+.SU input[type="text"],
+.SU input[type="password"],
+.SU input[type="email"]{
     border:1px solid #c4c4c4;
     border-radius: 8px;
     width:40%;
