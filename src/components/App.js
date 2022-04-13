@@ -23,8 +23,7 @@ function App() {
 
   
   return (
-    <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
-      <div style={{ maxWidth: "700px"}}>
+
         <Router>
           <Navbar />
           <AuthProvider>
@@ -32,21 +31,20 @@ function App() {
               <PrivateRoute exact path="/" component={Dashboard} />
               <Route path="/signup" component={Signup} />
               <Route path="/signin" component={Signin} />
-              <Route path="/" exact element={<ExamineePage />} />
-              <Route path="/Home"  component={<ExamineePage />} />
-              <Route path="/Help" element={<HelpPage />} />
-              <Route path="/Examiner"  element={<ExaminerPage />} />
-              <Route path="/CreateExam"  element={<CreateExam />} />
-              <Route path="/Admin"  element={<AdminPage />} />
-              <Route path="/Forum"  element={<Forums />} />
-              <Route path="/Calendar"  element={<Calendar />} />
-              <Route path="/Questions/:script_index" exact element={<Questions />} />
+              <Route path="/" exact component={ExamineePage} />
+              <PrivateRoute path="/Home"  component={ExamineePage} />
+              <PrivateRoute path="/Help" component={ HelpPage } />
+              <PrivateRoute path="/Examiner"  component={ExaminerPage} />
+              <PrivateRoute path="/CreateExam"  component={CreateExam } />
+              <PrivateRoute path="/Admin"  component={AdminPage } />
+              <PrivateRoute path="/Forum"  component={Forums}  />
+              <PrivateRoute path="/Calendar"  component={Calendar } />
+              <PrivateRoute path="/Questions/:script_index" exact component={Questions } />
             </Switch>
           </AuthProvider>
 
         </Router>
-      </div> 
-    </Container>
+
   
   )
 

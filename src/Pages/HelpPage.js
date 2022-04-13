@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { db } from "../Components/config";
 
 
-function Main() {
+export default function HelpPage() {
 
     function Questions(){
         return (
@@ -61,4 +61,3 @@ function Main() {
 }
 
 
-export default Main;

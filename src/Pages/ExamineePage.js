@@ -5,7 +5,7 @@ import Help from '../Components/HelpForums'
 import Calendar from '../Components/Calendar'
 import ExamsCourses from '../Components/ExamCourses'
 
-function Main() {
+export default function ExamineePage() {
   return (
     <div className="ExamineePage">
         <Title Title = "Examinee Page"/>
@@ -27,4 +27,3 @@ function Main() {
     );
   }
 
-export default Main;

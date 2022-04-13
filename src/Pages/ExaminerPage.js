@@ -6,7 +6,7 @@ import Calendar from '../Components/Calendar'
 import ExamsCourses from '../Components/ExamCourses'
 import { NavLink } from '../Components/Navbar/NavBarElements';
 
-function Main() {
+export default function ExaminerPage() {
   return (
     <div className="ExaminerPage">
         <Title Title = "Examiner Page"/>
@@ -26,4 +26,3 @@ function Main() {
   );
 }
 
-export default Main;
