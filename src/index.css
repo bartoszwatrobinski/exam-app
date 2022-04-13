@@ -138,8 +138,7 @@
 
 .HelpPage{
   position: relative;
-  background-image: url(./Images/examinationAppBackground.webp);
-  background-repeat: no-repeat;
+  background-image: url(./Images/creamBackground.jpeg);
   background-position: left;
   width: 1920px;
   height: 1080px;
@@ -153,7 +152,7 @@
   height: 200px;
   left: 25px;
   top: 0px;
-  background: #e7edf7;
+  background: linear-gradient( 195deg, #a1a3b9 0%, white 100%);
   
 }
 
@@ -171,14 +170,15 @@
   position: absolute;
   width: 655px;
   height: 570px;
-  left: 55px;
-  top: 110px;
+  left: 208px;
+  top: 200px;
   background: #e7edf7;
   margin-left: 5px;
   padding:10px;
+  border: 3px solid #252b1dd2;
 }
 
-input{
+.postContainer input{
   text-align: center;
   padding: 1em;
   border: 1pt solid #a1b9dff1;
@@ -189,11 +189,7 @@ input{
   margin-bottom: 1em;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  
-
 }
-
-
 
 /*Post white backgrounf*/
 .postContainer{
@@ -203,8 +199,8 @@ input{
   top: 200px;
   left: 910px;;
 
-
-  background: white;
+  background-image: url(./Images/forumBackground.jpeg);
+  border: 3px solid #252b1dd2;
   flex: 1;
   overflow-y: scroll;
 }
@@ -242,8 +238,7 @@ input{
 /* ##############  Calendar Page CSS  #################*/
 .CalendarBgd{
   position: absolute;
-  background-image: url(./Images/examinationAppBackground.webp);
-  background-repeat: no-repeat;
+  background-image: url(./Images/creamBackground.jpeg);
   background-position: left;
   width: 1920px;
   height: 1080px;
@@ -346,18 +341,16 @@ font-family: 'Nunito';
   width: 1500px;
   height: 750px;
   top: 180px;
-  left: 200px;
+  left: 175px;
   padding: 2%;
+  border: 3px solid #252b1dd2;
+  background-image: url(./Images/examinationAppBackground.webp);
 
-  background: white;
-  flex: 1;
-  overflow-y: scroll;
 }
 
 .QuestionsPage{
   position: relative;
-  background-image: url(./Images/ExaminationBackground.jpg);
-  background-repeat: no-repeat;
+  background-image: url(./Images/creamBackground.jpeg);
   background-position: left;
   width: 1920px;
   height: 1080px;
@@ -406,7 +399,7 @@ font-family: 'Nunito';
 
 .timer{
   float: right;
-  background-color: rgb(220, 240, 239);
+  background-color:lightgray;
   margin-right: 20px;
   border-radius: 15px;
   width: 320px;
@@ -419,10 +412,10 @@ font-family: 'Nunito';
   border-top-right-radius: 12px;
   padding-top: 11px;
   padding-bottom: 15px;
-  padding-left: 139px;
+  padding-left: 135px;
   padding-right:140px;
-  background-color: rgb(72, 94, 93);
-  
+  background-color: gray;
+  border: 2px solid #2f4246d2;
   color: aliceblue;
 }
 .cd{
@@ -440,7 +433,6 @@ font-family: 'Nunito';
   padding:1.9em;
   font-size: 1.5em;
   font-weight: Italic;
-  color:rgb(62, 77, 50);
 }
 .subm{
   width: 10em;
@@ -452,6 +444,81 @@ font-family: 'Nunito';
   background-color: #252b1dec;
   color: aliceblue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ExamQs {
+  text-align: center;
+}
+
+.question-card {
+  position: absolute;
+  left: 70px;
+  margin: 0 auto;
+
+  
+  width: 60%; 
+  height: auto;
+
+
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+.Score h2{
+  position: relative;
+  left: -60px;
+}
+li {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+
+.final-results {
+  position: relative;
+  margin: 0 auto;
+  left: -230px;
+ 
+  width: 50%; 
+  height: auto;
+  margin-top: 64px;
+
+
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.QuestionsContainer button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
 }
 
 /*#####################################################*/
@@ -493,19 +560,6 @@ font-family: 'Nunito';
   margin-bottom: -20px;
 }
 
-.BigInput{
-  position: relative;
-  width: 500px;
-  margin-bottom: 3px;
-  margin-top: 5px;
-  left: 0px;
-}
-.SmallInput{
-  position: relative;
-  width: 200px;
-  padding: 1%;
-  left: 200px;
-}
 
 .container button {
   position: relative;
@@ -554,12 +608,10 @@ font-family: 'Nunito';
 
 .Grades{
   position: absolute;
-  width: 400px;
+  width: 455px;
   height: 300px;
   top: 180px;
   left: 30px;
-
-  
 
   text-align: center;
   background-image: url(./Images/forumBackground.jpeg);
@@ -571,9 +623,8 @@ font-family: 'Nunito';
   border: 2px solid #422800;
   border-radius: 31px;
   
-  
- 
-  
+  flex: 1;
+  overflow-y: scroll;
 }
 
 /* Forum */
@@ -588,7 +639,7 @@ font-family: 'Nunito';
   background-image: url(./Images/forumBackground.jpeg);
   font-family: "Didot", serif;
   font-variant: small-caps;
-  font-size: large;
+  font-size: small;
   flex: 1;
   overflow-y: scroll;
 
@@ -626,10 +677,8 @@ font-family: 'Nunito';
   top: 180px;
   left: 540px;
 
-  background-color: whitesmoke;
- 
- 
- 
+  background-image: url(./Images/forumBackground.jpeg);
+  border: 2px solid #422800;
   border-radius: 31px;
   flex: 1;
   overflow-y: scroll;
@@ -665,7 +714,7 @@ font-family: 'Nunito';
   width: 350px;
   height: 50px;
   left: 10px;
-  background: #e7edf7;
+  background: linear-gradient( 195deg, #a1a3b9 0%, white 100%);
 }
 
 .ForumDisplaySmall h1,h2,h3{
@@ -678,4 +727,77 @@ font-family: 'Nunito';
   top: 10px;
   color: red;
   margin-bottom: 20px;
+}
+
+.SignInContainer{
+  position: absolute;
+  width: 700px;
+  height: 800px;
+  left:600px;
+  top: 150px;
+  border: 2px solid #422800;;
+  background-image: url(./Images/forumBackground.jpeg);
+}
+.SignInContainer input{
+  width: 400px;
+  height: 50px;
+  
+}
+.SignInContainer h2{
+  position: relative;
+  left: -200px;
+}
+.eamilPos{
+  position: relative;
+  left: 15px;
+}
+.namePos{
+  position: relative;
+  left: -20px;
+  margin-bottom: -15px;
+}
+
+.emailPos{
+  position: relative;
+  left: 15px;
+  margin-bottom: -15px;
+  margin-top:-20px;
+}
+
+.pwdPos{
+  position: relative;
+  margin-bottom: -15px;
+  margin-top:-20px;
+}
+
+.cnfPos{
+  position: relative;
+  left: 35px;
+  margin-bottom: -15px;
+  margin-top:-20px;
+}
+.RolePos{
+  position: relative;
+  left: 52px;
+}
+
+.NameOfCourse{
+  position: relative;
+  font-size: 35px;
+  left: 280px;
+}
+.StartDateCourse{
+  position: relative;
+  font-size: 20px;
+  top: -170px;
+  left: px;
+  width: 200px;
+
+}
+.EndDateCourse{
+  position: relative;
+  font-size: 20px;
+  top: -230px;;
+  left: 480px;
+  width:190px;
 }

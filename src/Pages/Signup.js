@@ -36,12 +36,13 @@ import { Link, useHistory } from "react-router-dom"
       setLoading(false)
 
     }
-
-    return (
     
+    return (
+    <div className="ExaminerPage">
     <Card>
       <Card.Body>
-        <h2 className = "text-center mb-4" class="names" id="signUp">Sign up</h2>
+        <div className="SignInContainer">
+        <h1 className = "text-center mb-4" class="names" id="signUp">Sign up</h1>
         
         {error && <Alert class="alert" variant="danger"><div class = "error">{error}</div></Alert>}
         <Form class="main" onSubmit={handleSubmit}>
@@ -49,22 +50,30 @@ import { Link, useHistory } from "react-router-dom"
 
             <div class="names" id="login">Do you have an account? <Link to="/signin" class="signUp">Sign in</Link> here</div>
             <div>
-              <div class="names" id="head">Name</div>
+              <div className="namePos">
+                <h2 class="names" id="head">Name</h2>
+              </div>
               <input type="text" name="name" class="type" ref={nameRef} required></input>
             </div>
             <div>
-              <div class="names" id="head">Email address</div>
+            <div className="emailPos">
+                <h2 class="names" id="head">Email Address:</h2>
+              </div>
               <input type="email" name="email" class="type" ref={emailRef} required></input>
             </div>
             <div>
-              <div class="names" id="head">Password</div>
+            <div className="pwdPos">
+                <h2 class="names" id="head">Password:</h2>
+              </div>
               <input type="password" name="password" class="type" ref={passwordRef} required></input>
             </div>
             <div>
-              <div class = "names" id="head">Confirm Password</div>
+            <div className="cnfPos">
+                <h2 class="names" id="head">Confirm Password:</h2>
+              </div>
               <input type="password" name="password" class="type" ref={passwordConfirmRef} required></input>
             </div>
-            <div>
+            <div className="RolePos">
               <div class="names" id="head">Role</div>
               <select class = "names" id="head" ref={roleRef} required>
                 <option value="examinee">Examinee</option>
@@ -76,8 +85,10 @@ import { Link, useHistory } from "react-router-dom"
             <button id="button" className="w-100" type="submit" class = "button" disabled={loading}>Sign Up</button>
           </div>
         </Form>
+        </div>
       </Card.Body>
     </Card>
+    </div>
       )
     }
 

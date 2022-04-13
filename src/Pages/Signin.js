@@ -30,10 +30,11 @@ export default function Signin() {
 
   }
   return (
-    
+    <div className="ExaminerPage">
     <Card class="name">
       <Card.Body>
-        <h2 className = "text-center mb-4" class="names" id="signUp">Sign in</h2>
+        <div className="SignInContainer" > 
+        <h1 className = "text-center mb-4" class="names" id="signUp">Sign in</h1>
         
         {error && <Alert class="alert" variant="danger"><div class = "error">{error}</div></Alert>}
         <Form class="main" onSubmit={handleSubmit}>
@@ -41,17 +42,21 @@ export default function Signin() {
 
             <div class="names" id="login">Not a member yet? <Link to="/signup" class="signUp">Sign up</Link> here</div>
             <div>
-              <div class="names" id="head">Email address</div>
+              <div className = "eamilPos">
+                <h2  class="name" id="head">Email address:</h2>
+              </div>
               <input type="email" name="email" class="type" ref={emailRef} required></input>
             </div>
             <div>
-              <div class="names" id="head">Password</div>
+              <h2 class="names" id="head">Password:</h2>
               <input type="password" name="password" class="type" ref={passwordRef} required></input>
             </div>
             <button class="button" type="submit" disabled={loading}>Sign In</button>
           </div>
         </Form>
+        </div>
       </Card.Body>
     </Card>
+    </div>
       )
 }

@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Nav,NavLink,Bars,NavMenu,NavBtn,NavBtnLink} from './NavBarElements.js';
 import Logo from './../../Images/ExaminationLogo.png'
+import { useAuth } from './../../contexts/AuthContext'
+import { useHistory } from "react-router-dom"
+
+
+
+
 
 
 const Navbar = () => {
@@ -29,7 +35,7 @@ const Navbar = () => {
             </NavLink>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="/Login">Log in</NavBtnLink>
+              
           </NavBtn>
       </Nav>
     </>

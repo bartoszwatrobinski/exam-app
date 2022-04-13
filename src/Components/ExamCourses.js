@@ -40,8 +40,10 @@ const ExamCourses = () => {
                                     {post.ExamName} 
                                 </NavLink>
                             </nav>
-                            <h2 className="DurationOfCourse">{post.ExamDuration}</h2>
+                            <h2 className="DurationOfCourse">Total Marks: {post.TotalMarks} &nbsp; &nbsp; &nbsp;Exam Duration:{post.ExamDuration} Minuites</h2>
                             <h2 className="DescriptionOfCourse">{post.ExamDescription}</h2>
+                            <h2 className="StartDateCourse">Start Date: {post.StartDate}</h2>
+                            <h2 className="EndDateCourse">End Date: {post.EndDate}</h2>
                             </div>)
                     
                 ) : (
