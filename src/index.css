@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+/* ##############  Examinee Page CSS  #################*/
+.ExamineePage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+.CurrentExams{
+  position: absolute;
+  width: 460px;
+  height: 300px;
+  top: 700px;
+  left: 1430px;
+
+  background: #4CA855;
+  border-radius: 31px;
+}
+
+
+
+
+/*#####################################################*/
+
+/* ##############  Examiner Page CSS  #################*/
+.ExaminerPage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+.CreateExamButton{
+  position: absolute;
+  top: 700px;
+  left: 1420px;
+}
+
+/* CSS */
+.CreateButton {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 450px;
+}
+
+.CreateButton:hover {
+  background-color: #fff;
+}
+
+.CreateButton:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .CreateButton {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+/*##################################################*/
+
+/* ##############  Admin Page CSS  #################*/
+.AdminPage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+
+
+/*#################################################*/
+
+/* ##############  Help Page CSS  #################*/
+
+.HelpPage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+.ForumDisplay{
+  position: relative;
+  width: 750px;
+  height: 200px;
+  left: 10px;
+  top: 0px;
+  background: cyan;
+}
+
+.ForumDisplay h1,h2,h3{
+  padding: 10px;
+}
+
+.AddPost {
+  position: absolute;
+  width: 655px;
+  height: 500px;
+  left: 215px;
+  top: 150px;
+  background: cyan;
+  margin-left: 5px;
+  padding:10px;
+}
+.postContainer{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 150px;
+  left: 910px;;
+
+  background: green;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.AddPost h1,h2,h3{
+  padding:10px;
+}
+
+
+
+/*##################################################*/
+
+/* ##############  Mark Page CSS  #################*/
+
+
+
+
+
+/*##################################################*/
+
+/* ##############  Calendar Page CSS  #################*/
+.CalendarBgd{
+  position: absolute;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+/*##################################################*/
+
+/* ##############  Login Page CSS  #################*/
+.LoginCss{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+  
+}
+.SignUpContainer{
+  position: absolute;
+  width: 600px;
+  height: 650px;
+  top: 180px;
+  left: 550px;
+  padding: 5%;
+
+  background: #4CA855;
+}
+.main {
+  font-size:100%;
+  font-size:16px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display:block;
+  border-style:solid;
+  border-radius:8px;
+  width:600px;
+  height: 675px;
+}
+
+.button {
+  display:block;
+  color:white;
+  border:none;
+  border-radius:8px;
+  text-transform:uppercase;
+  width: 150px;
+  height:60px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:20px;
+  background-color: #00308F;
+  letter-spacing: 0.8px;
+}
+#signUp{
+  text-align:center;
+  font-size:30px;
+}
+
+#head{
+  margin-left:100px;
+  font-size:20px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+.type{
+  margin:10px;
+  width:300px;
+}
+
+.main input[type="text"],
+.main input[type="password"],
+.main input[type="email"]{
+  border:1px solid #c4c4c4;
+  border-radius: 8px;
+  width:400px;
+  height:60px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+/*#####################################################*/
+
+/* ###########  Examiner Results Page CSS  ############*/
+
+
+
+/*#####################################################*/
+
+/* ###########  Questions Page CSS  ############*/
+.QuestionsContainer{
+  position: absolute;
+  width: 1500px;
+  height: 750px;
+  top: 180px;
+  left: 200px;
+  padding: 2%;
+
+  background: #4CA855;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.QuestionsPage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+.questions{
+  background-color: rgb(240, 237, 220);
+  margin-left: 10px;
+  border-radius: 15px;
+  width: 800px;
+  padding-bottom: 15px;
+  border: 3px solid #252b1dd2;
+}
+.q_label{
+  width: 800px;
+  float:left;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: aliceblue;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.q_answers{
+  background-color: rgb(240, 237, 220);
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.m_label{
+  float: right;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.726);
+  border-bottom-right-radius: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 5px;
+  padding-right: 20px;
+}
+
+.txt_answer{
+  width: 550px;
+  height: 50px;
+}
+
+.timer{
+  float: right;
+  background-color: rgb(220, 240, 239);
+  margin-right: 20px;
+  border-radius: 15px;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 3px solid #2f4246d2;
+}
+.t_header{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  padding-left: 139px;
+  padding-right:140px;
+  background-color: rgb(72, 94, 93);
+  color: aliceblue;
+}
+.cd{
+  font-size:5em;
+  font-family: sans-serif;
+  padding: 10px;
+  float: right;
+  margin-right: 0.5em;
+  font-weight: Bold;
+  color:rgb(13, 10, 37);
+  background-color: rgba(107, 197, 193, 0.253);
+}
+
+.tms{
+  padding:1.9em;
+  font-size: 1.5em;
+  font-weight: Italic;
+  color:rgb(62, 77, 50);
+}
+.subm{
+  width: 10em;
+  height: 2em;
+  border: 0.1em solid #7c7dcad2;
+  border-radius: 1em;
+  margin-left: 10em;
+  font-size: 2em;
+  background-color: #252b1dec;
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ExamQs {
+  text-align: center;
+}
+
+.question-card {
+  position: absolute;
+  left: 70px;
+  margin: 0 auto;
+
+  
+  width: 60%; 
+  height: auto;
+
+
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+.Score h2{
+  position: relative;
+  left: -60px;
+}
+li {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+
+.final-results {
+  margin: 0 auto;
+
+ 
+  width: 50%; 
+  height: auto;
+  margin-top: 64px;
+
+
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.QuestionsContainer button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
+}
+
+/*#####################################################*/
+
+/* ##############  Create Exam Page CSS  #############*/
+
+.CreateSmall{
+  width:0.1px;
+  height:0.1px;
+}
+.CreateExamPage{
+  position: relative;
+  background-image: url(./Images/ExaminationBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Nunito';
+}
+
+.container{
+  position: absolute;
+  width: 1500px;
+  height: 850px;
+  top: 180px;
+  left: 200px;
+
+  background: #4CA855;
+  border-radius: 31px;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.container h1{
+  position: relative;
+  padding: 5%;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.BigInput{
+  position: relative;
+  width: 500px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  left: 0px;
+}
+.SmallInput{
+  position: relative;
+  width: 200px;
+  padding: 1%;
+  left: 200px;
+}
+
+.container button {
+  position: relative;
+  padding: 1%;
+  left: 330px;
+  top: 0;
+  
+}
+.container h2{
+  position: relative;
+  font-size: 20px;
+  top: -700px;
+  left: 100px;
+  width : 180px;
+  margin-bottom: -0.5%
+}
+.FormContainer{
+
+  left: 30px;
+}
+/*####################################################*/
+
+/* ##############   Components CSS  #################*/
+.Title{
+  position: absolute;
+  width: 1500px;
+  height: 60px;
+  top: 60px;
+  left: 210px;
+
+  background: #4CA855;
+}
+.Title h1{
+  position: relative;
+  text-align: center;
+  top: -10px;
+}
+
+.Grades{
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 180px;
+  left: 30px;
+
+  background: #4CA855;
+  border-radius: 31px;
+}
+.Help{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 500px;
+  left: 30px;
+
+  background: #4CA855;
+  border-radius: 31px;
+  flex: 1;
+  overflow-y: scroll;
+}
+.Help h1{
+  position: relative;
+  left: 150px;
+  width: 100px;
+}
+.Calendar{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 180px;
+  left: 1430px;
+
+  background: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 31px;
+  padding: 30px;
+}
+.ExamsCourses{
+  position: absolute;
+  width: 850px;
+  height: 850px;
+  top: 180px;
+  left: 540px;
+
+  background: #4CA855;
+  border-radius: 31px;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.CourseDisplay{
+  position: relative;
+  width: 700px;
+  height: 200px;
+  left: 50px;
+  top: 50px;
+  margin-bottom: 10px;
+
+  background: red;
+}
+.CoursesDisplay h2{
+  font-size: 22px;
+}
+
+.ForumDisplaySmall{
+  position: relative;
+  width: 350px;
+  height: 50px;
+  left: 10px;
+  background: cyan;
+}
+
+.ForumDisplaySmall h1,h2,h3{
+  padding: 10px;
+}
+
+.expand{
+  position: relative;
+  left: 20px;
+  top: 10px;
+  color: red;
+  margin-bottom: 20px;
+}
